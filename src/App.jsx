@@ -1,15 +1,13 @@
 import Header from "./Components/Header"
-import Conteudo from "./Components/Conteudo"
 import Footer from "./Components/Footer"
-import Complemento from "./Components/Complemento"
+import { Outlet } from "react-router-dom"
 
 function App() {
 
   return (
-    <div>
+    <div className="App">
         <Header/>
-        <Conteudo/>
-        <Complemento/>
+        <Outlet/>
         <Footer/>
     </div>
   )
